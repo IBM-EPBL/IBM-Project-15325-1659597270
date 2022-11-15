@@ -1,0 +1,42 @@
+B
+    ZÍa_   ã               @   sš   d dl mZmZmZ d dlZd dlZd dlZee ƒZdd„ Z	e 
+d¡dd „ ƒZ
+dd	„ Zej
+d
+d
+dgd
+dd„ ƒZ
+e d¡dd„ ƒZe dkr–ejdd dS )é    )ÚFlaskÚrender_templateÚ requestNc             C   s:   t  dd¡}| ¡  | | |¡ | | d|¡ | ¡  d S )Nzsmtp.gmail.comiK  zcybercreed010@gmail.com)Ú smtplibZSMTPZstarttlsÚloginZsendmailÚquit)ÚemailZpssdZmssgÚserver© r
+   ú#C:\Users\cyber\Desktop\Final\app.pyÚmail    s
+    r   ú/c               C   s   t dƒS )Nz
+index.html)r   r
+   r
+   r
+   r
+   Ú	home_page   s    r   c              C   s:   |   d¡}|   d¡}|   d¡}d|› d|› d|› d  }|S )NÚnamer   Ú messagezFrom: z <z/>
+Subject: New Message On Our Official Website
+Ú
+)Úget)Údatar   r   Úmsgr   r
+   r
+   r
+   ÚcleanMsg   s
+    
+
+
+r   z/submit_formÚGETÚPOST)Ú methodsc              C   s<   t jdkr4t j ¡ } t| ƒ}tj  d¡}tdddS dS d S ) Nr   Z
+EMAIL_PASSz
+index.htmlztest())ÚcodezSomething Not Right )	r   ÚmethodÚformÚ to_dictr   ÚosÚ environr   r   )r   r   Úpasswordr
+   r
+   r
+   r   '   s    
+
+r   i”  c             C   s   t dƒS )Nz404.html)r   )Úer
+   r
+   r
+   Ú	not_found3   s    r!   Ú__main__T)Údebug)Úflaskr   r   r   Útimer   r   Ú__name__Úappr   Úrouter   r   r   Úerrorhandlerr!   Úrunr
+   r
+   r
+   r
+   Ú<module>   s   
+
+
