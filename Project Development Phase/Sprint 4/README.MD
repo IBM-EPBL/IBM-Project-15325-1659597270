@@ -1,4 +1,4 @@
 ## PROJECT DEVELOPMENT PHASE
-# SPRINT 4
+# SPRINT 04
 
-- [x] OVERALL 
+- :) Allaround
