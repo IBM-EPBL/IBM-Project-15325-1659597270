@@ -5,9 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
+            "type": "Browser",
+            "request": "Start",
+            "name": "Start Browser against localhost",
             "url": "http://localhost:5000",
             "webRoot": "${workspaceFolder}"
         }
